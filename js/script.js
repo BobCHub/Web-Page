@@ -14,8 +14,9 @@ function submitAnswers() {
 		if (eval('q'+i) == null || eval('q'+i) == '') {
 			
 			// alert('You missed question '+ i);
-			var results = document.getElementById('results2');
-			results.innerHTML = '<h3> You missed question <span> i </span></h3>';
+			var results = document.getElementById('resultswrong');
+			// results.innerHTML = '<h3> You missed question <span> i </span></h3>';
+			document.querySelector('.resultswrong').innerHTML = i;
 			return false;
 		}
 	}
@@ -35,7 +36,7 @@ function submitAnswers() {
 	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
 	//alert('You score '+score+' out of ' +total);
 	
-	var results = document.getElementById('results2');
+	var results = document.getElementById('resultswrong');
 	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
 	//alert('You score '+score+' out of ' +total);
 
