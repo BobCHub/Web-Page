@@ -1,6 +1,6 @@
 body {
 	background: #ff8533;
-	color: #000;
+	color: #ffffff;
 	font-family: 'Helvetica', 'sans-serif';
 	font-size: 14px;
 }
@@ -54,6 +54,6 @@ input[type='submit'] {
 }
 
 #results span {
-	color: #000;
+	color: #ff0000;
 	font-weight: bold;
 }
