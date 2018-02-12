@@ -14,7 +14,7 @@ function submitAnswers() {
 		if (eval('q'+i) == null || eval('q'+i) == '') {
 			
 			// alert('You missed question '+ i);
-			results.innerHTML = '<h3> You missed question + [i] </h3>';
+			results.innerHTML = '<h3> You missed question + i </h3>';
 			return false;
 		}
 	}
