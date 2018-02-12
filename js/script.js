@@ -15,7 +15,7 @@ function submitAnswers() {
 			
 			// alert('You missed question '+ i);
 			var results = document.getElementById('results2');
-			results.innerHTML = '<h3> You missed question <span> [i] </span></h3>';
+			results.innerHTML = '<h3> You missed question <span> +i+ </span></h3>';
 			return false;
 		}
 	}
@@ -32,6 +32,10 @@ function submitAnswers() {
 
 	// Display Results
 	var results = document.getElementById('results');
+	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
+	//alert('You score '+score+' out of ' +total);
+	
+	var results = document.getElementById('results2');
 	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
 	//alert('You score '+score+' out of ' +total);
 
