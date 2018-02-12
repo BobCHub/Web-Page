@@ -7,7 +7,7 @@ body {
 
 #container {
 	width: 60%;
-	background: #6600ff;
+	background: #1ab2ff;
 	margin: 20px auto;
 	overflow: auto;
 	padding: 25px;
@@ -22,12 +22,13 @@ header {
 header h1 {
 	margin: 0;
 	padding: 0;
+	color: #ffffff;
 }
 
 header p {
 	padding: 0;
 	margin-top: 5px;
-	color: #333333;
+	color: #ffffff;
 }
 
 section {
