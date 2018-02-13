@@ -10,14 +10,22 @@ function submitAnswers() {
 	var q5 = document.forms["quizForm"]["q5"].value;
 
 	// Validation
+	
 	for ( i = 1; i <= total; i++ ) {
+		if (eval('q'+i) == null || eval('q'+i) == '') {
+			// alert('You missed question '+ i);
+			var wrong = [i];
+			results.innerHTML = '<h3> You missed question<span> + wrong </span></h3>';
+			return false;
+			
+	/*for ( i = 1; i <= total; i++ ) {
 		if (eval('q'+i) == null || eval('q'+i) == '') {
 			
 			// alert('You missed question '+ i);
-			var results = document.getElementById('resultswrong');
-			// results.innerHTML = '<h3> You missed question <span> i </span></h3>';
-			document.querySelector('.resultswrong').innerHTML = i;
-			return false;
+			var resultswrong = document.getElementById('resultswrong');
+			results.innerHTML = '<h3> You missed question <span> i </span></h3>';
+			
+			return false;*/
 		}
 	}
 
@@ -37,7 +45,7 @@ function submitAnswers() {
 	//alert('You score '+score+' out of ' +total);
 	
 	var results = document.getElementById('resultswrong');
-	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
+	results.innerHTML = '<h3>You forgot to fill in <span>'+ resultswrong +'</span></h3>';
 	//alert('You score '+score+' out of ' +total);
 
 	return false;
