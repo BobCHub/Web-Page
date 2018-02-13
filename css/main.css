@@ -60,15 +60,15 @@ input[type='submit'] {
 	font-weight: bold;
 }
 
-#results2 h3 {
-	background: #1ab2ff;
+#resultsb h3 {
+	background: #ffff99;
 	color: #ff0000;
 	font-weight: bold;
 	padding: 10px;
 	margin: 10px 0;
 }
 
-#results2 span {
+#resultsb span {
 	color: #ff0000;
 	font-weight: bold;
 }
