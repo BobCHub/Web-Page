@@ -14,8 +14,9 @@ function submitAnswers() {
 	for ( i = 1; i <= total; i++ ) {
 		if (eval('q'+i) == null || eval('q'+i) == '') {
 			// alert('You missed question '+ i);
-			var wrong = [i];
-			results.innerHTML = '<h3> You missed question<span> + wrong </span></h3>';
+			//var wrong = [i];
+			results.innerHTML = '<h3> You missed question + [i] </h3>';
+			//results.innerHTML = '<h3> You missed question<span> + wrong </span></h3>';
 			return false;
 			
 	/*for ( i = 1; i <= total; i++ ) {
