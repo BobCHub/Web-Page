@@ -34,15 +34,40 @@ function submitAnswers() {
 
 	// Display Results
 	var results = document.getElementById('results');
-	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
-	//alert('You score '+score+' out of ' +total);
+	results.innerHTML = '<h3>You scored <span>'+score+'</span> out of   <span>'+total+'</span></h3>';
+	/*('You score '+score+' out of ' +total); */
 	
 	
 	var results = document.getElementById('resultsb');
 	 results.innerHTML = '<h3>You scored <span>'+score+'</span> out of <span>'+total+'</span></h3>';
-	//alert('You score '+score+' out of ' +total);
+	/* ('You score '+score+' out of ' +total); */
+  
+  // Display Last Result
+   var oldresult = localStorage.getItem('results');
+	 results.innerHTML = '<h3>Your last score was <span>'+oldresult+'</span></h3>';
+	/* alert('You score '+score+' out of ' +total); */
         
+	// get the text
+   var text = $('#results').text();
+  
+  // set the item in localStorage
+  localStorage.setItem('results', text);
+
+  // bind text to 'blur' event for div
+  $('#results').on('blur', function(){
+   
+	// check the new text
+  var newText = $(this).text();
 	
+	// overwrite the old text
+  localStorage.setItem('results', newText);
+
+	// test if it works
+	/* alert( localStorage.getItem('results') ); */
+  
+})
+
+  
 	return false;
 
 }
