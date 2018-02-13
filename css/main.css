@@ -13,20 +13,6 @@ body {
 	padding: 25px;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 140px 140px auto 30px;
-  grid-gap: 10px;
-  background-color: #1ab2ff;
-  padding: 10px;
-}
-.grid-container > div {
-  background-color: rgba(#ffff66);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-
-
 
 
 
@@ -40,6 +26,12 @@ header h1 {
 	margin: 0;
 	padding: 0;
 	color: #ffffff;
+}
+
+header h3 {
+	margin: 0;
+	padding: 0;
+	color: #ff0000;
 }
 
 header p {
