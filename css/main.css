@@ -13,6 +13,23 @@ body {
 	padding: 25px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 140px 140px auto 30px;
+  grid-gap: 10px;
+  background-color: #1ab2ff;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(#1ab2ff);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+
+
+
+
 header {
 	text-align: center;
 	border-bottom: #ffffff solid 1px;
