@@ -44,7 +44,7 @@ function submitAnswers() {
   
   // Display Last Result
    var oldresult = localStorage.getItem('results');
-	 results.innerHTML = '<h3>Your last score was <span>'+oldresult+'</span></h3>';
+	 results.innerHTML = '<h3>Last Time <span>'+oldresult+'</span></h3>';
 	/* alert('You score '+score+' out of ' +total); */
         
 	// get the text
