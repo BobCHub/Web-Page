@@ -1,85 +1,102 @@
 body {
-	background: #ff8533;
-	color: #ffffff;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 14px;
+    background: #ff8533;
+    color: #ffffff;
+    font-family: 'Helvetica', 'sans-serif';
+    font-size: 14px;
 }
 
 #container {
-	width: 60%;
-	background: #1ab2ff;
-	margin: 20px auto;
-	overflow: auto;
-	padding: 25px;
+    width: 60%;
+    background: #1ab2ff;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
 }
 
 
 
 
 header {
-	text-align: center;
-	border-bottom: #ffffff solid 1px;
+    text-align: center;
+    border-bottom: #ffffff solid 1px;
 
 }
 
 header h1 {
-	margin: 0;
-	padding: 0;
-	color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
 }
 
 header h3 {
-	margin: 0;
-	padding: 0;
-	color: #ff0000;
+    margin: 0;
+    padding: 0;
+    color: #ff0000;
 }
 
 header p {
-	padding: 0;
-	margin-top: 5px;
-	color: #ffffff;
+    padding: 0;
+    margin-top: 5px;
+    color: #ffffff;
 }
 
 section {
-	min-height: 400px;
+    min-height: 400px;
 }
 
 footer {
-	text-align: center;
+    text-align: center;
 }
 
 input[type='submit'] {
-	background: #333333;
-	border: 0;
-	color: #fff;
-	padding: 10px 15px;
-	cursor: pointer;
+    background: #333333;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 #results h3 {
-	background: #1ab2ff;
-	color: #ff0000;
-	font-weight: bold;
-	padding: 10px;
-	margin: 10px 0;
+    background: #1ab2ff;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 #results span {
-	color: #ff0000;
-	font-weight: bold;
-	font-family: 'Work Sans', sans-serif;
+    color: #ff0000;
+    font-weight: bold;
 }
 
 #resultsb h3 {
-	background: #ffff99;
-	color: #ff0000;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: bold;
-	padding: 10px;
-	margin: 10px 0;
+    background: #ffff99;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
 }
-#ffff00
+
 #resultsb span {
-	color: #ff0000;
-	font-weight: bold;
+    color: #ff0000;
+    font-weight: bold;
+    width: 170px;
+}
+
+#highscore h3 {
+    background: #ffff99;
+    color: #ff0000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    
+}
+
+#highscore span {
+    color: #ff0000;
+    font-weight: bold;
+    width: 170px;
+    
 }
