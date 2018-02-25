@@ -36,7 +36,7 @@ function submitAnswers() {
 	}
 
 	//Set Corrent Answers
-	var answers = ["b", "a", "d", "b", "d"];
+	var answers = ["a", "c", "b", "b", "c"];
 
 	//Check Answers
 	for (i = 1; i <= total; i++) {
