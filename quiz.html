@@ -2,7 +2,6 @@
 	<head>
 		<title>Simple JavaScript Quiz</title>
 		<link rel="stylesheet" href="css/main.css">
-		<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
@@ -10,8 +9,10 @@
 			<header>
 				<h1>Simple JavaScript Quiz</h1>
 				<p>Test your knowledge in <strong>JavaScript fundamentals</strong></p>
+      
 			</header>
 			<section>
+        <div id="results"></div>
 				<div id="results"></div>
 				<form name="quizForm" onsubmit="return submitAnswers()">
 					<h3>1. How do you find the number with the highest value of x and y??</h3>
@@ -46,7 +47,8 @@
 					
 				</form>
 				
-				<div id="resultsb" background-color:#ffff00;> </div>
+				<div id="resultsb"> </div>
+				<div id="highscore"></div>
 			</section>
 			<footer>
 				
