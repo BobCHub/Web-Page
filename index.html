@@ -33,6 +33,39 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+  function updateFeed(username) {
+    GitHubActivity.feed({ username: username, selector: '#feed' });
+  }
+
+  $(document).ready(function() {
+    updateFeed('caseyscarborough');
+
+    $('#update').click(function() { updateFeed($("#username").val()); });
+    $("#username").keypress(function(e) {
+      if (e.which === 13) {
+        updateFeed($("#username").val());
+      }
+    });
+  });
+</script>
+<style>
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
+    padding: 20px;
+    font-family: 'Helvetica', 'Arial';
+  }
+
+  #feed {
+    width: 700px;
+    height: 600px;
+    margin: 30px 0;
+  }
+</style>
 
 </head>
 
@@ -214,7 +247,9 @@
                         <div id="github-graph" class="github-graph"></div><!--//github-graph-->
 
                         
-                        <div id="feed" class="feed"></div><!--//ghfeed-->
+                       <input type="text" id="username" placeholder="GitHub Username" />
+<button id="update">Update</button>
+<div id="feed"></div>
                         
                         <div>
                         
